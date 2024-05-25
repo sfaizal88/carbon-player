@@ -21,8 +21,8 @@ const Counter = ({
   count
 }: CounterProps) => (
   <Box className='counter-container'>
-      <Box className='count'>{count}</Box>
-      <Box whiteSpace='nowrap'>{label}</Box>
+      <Box className='count' data-testid="counter-count-id">{count}</Box>
+      <Box whiteSpace='nowrap' data-testid="counter-label-id">{label}</Box>
   </Box>
 )
 

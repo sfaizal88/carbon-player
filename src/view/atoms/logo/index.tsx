@@ -9,7 +9,7 @@
 import { Text } from '@chakra-ui/react';
 
 const Logo = () => (
-  <Text>Pomodoro Timer</Text>
+  <Text data-testid="logo-id">Pomodoro Timer</Text>
 )
 
 export default Logo;
