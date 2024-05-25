@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.32854c33.css",
-    "main.js": "/static/js/main.16d1f1b8.js",
-    "static/js/453.569fd2a2.chunk.js": "/static/js/453.569fd2a2.chunk.js",
-    "index.html": "/index.html",
-    "main.32854c33.css.map": "/static/css/main.32854c33.css.map",
-    "main.16d1f1b8.js.map": "/static/js/main.16d1f1b8.js.map",
-    "453.569fd2a2.chunk.js.map": "/static/js/453.569fd2a2.chunk.js.map"
+    "main.css": "/carbon-player/static/css/main.32854c33.css",
+    "main.js": "/carbon-player/static/js/main.829e4cd3.js",
+    "static/js/453.569fd2a2.chunk.js": "/carbon-player/static/js/453.569fd2a2.chunk.js",
+    "index.html": "/carbon-player/index.html",
+    "main.32854c33.css.map": "/carbon-player/static/css/main.32854c33.css.map",
+    "main.829e4cd3.js.map": "/carbon-player/static/js/main.829e4cd3.js.map",
+    "453.569fd2a2.chunk.js.map": "/carbon-player/static/js/453.569fd2a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32854c33.css",
-    "static/js/main.16d1f1b8.js"
+    "static/js/main.829e4cd3.js"
   ]
 }
