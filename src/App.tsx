@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/**
+ * 
+ * App component
+ * @author - NA 
+ * @date - 24th May, 2024
+ * 
+ */
+// GENERIC IMPORT
+import {ChakraBaseProvider, theme} from '@chakra-ui/react';
+import {Provider} from 'react-redux';
+
+// COMPONENTS
+import ClockPage from './view/pages/clock';
+
+// REDUX
+import { store } from './redux/store';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraBaseProvider theme={theme}>
+      <Provider store={store}>
+        <ClockPage/>
+      </Provider>
+    </ChakraBaseProvider>
   );
 }
 
