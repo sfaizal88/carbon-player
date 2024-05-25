@@ -57,16 +57,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          node-version: 20
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
 
-      - name: Install Node.js dependencies
-        run: npm install
-
-      - name: Build the project
-        run: npm run build
-
-      - name: Run tests
-        run: npm run deploy
