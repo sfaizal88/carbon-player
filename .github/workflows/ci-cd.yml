@@ -57,11 +57,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Download build artifacts
-        uses: actions/download-artifact@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          name: build-artifacts
-          path: ./build
+          node-version: 20
+
+      - name: Install Node.js dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
 
       - name: Run tests
         run: npm run deploy
