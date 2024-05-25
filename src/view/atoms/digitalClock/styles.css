@@ -1,0 +1,8 @@
+.display {
+    font-size: 60px;
+    font-weight: 600;
+    color: #5f645f;
+    text-shadow: -1px 1px #000;
+    border-bottom: 1px solid #c3c3c3;
+    font-family: "Oswald", sans-serif; 
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Report 1",
+        "type":  "TITLE"
+    },
+    {
+        "id": 2,
+        "name": "Showing runs from all workflows",
+        "type":  "INFO"
+    },
+    {
+        "id": 3,
+        "name": "Report 3",
+        "type":  "TITLE"
+    }
+]

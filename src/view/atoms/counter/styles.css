@@ -1,0 +1,13 @@
+.counter-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+}
+.count {
+    font-size: 15px;
+    font-weight: 600;
+    color: #5f645f;
+    font-family: "Oswald", sans-serif;
+}

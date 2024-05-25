@@ -6,13 +6,13 @@
  * 
  */
 // GENERIC IMPORT
-import { Flex, Box, Text, Tooltip, IconButton } from '@chakra-ui/react';
+import { Flex, Box, Tooltip, IconButton } from '@chakra-ui/react';
 import { Icon } from '@chakra-ui/react'
 import { MdPowerSettingsNew } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 
 // COMPONENTS
-import {TodayTime} from '../../../atoms';
+import {TodayTime, Logo} from '../../../atoms';
 
 // REDUX
 import {stopTime} from '../../../../redux/reducer/timerReducer';
@@ -27,7 +27,7 @@ const ClockHeader = () => {
     return (
         <Flex className='clock-header'>
             <Box className='clock-header-cell'>
-                <Text>Pomodoro Timer</Text>
+                <Logo/>
             </Box>
             <Box className='clock-header-cell' justifyContent='center'>
                 <TodayTime/>

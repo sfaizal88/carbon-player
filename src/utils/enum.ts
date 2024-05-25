@@ -15,3 +15,8 @@ export enum TimerTypeEnum {
     WORK_TIME,
     BREAK_TIME
 }
+
+export enum StackTypeEnum {
+    TITLE = "TITLE",
+    INFO = "INFO"
+}

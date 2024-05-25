@@ -5,7 +5,7 @@
  * @date - 25th May, 2024
  * 
  */
-import {TimerStatusEnum, TimerTypeEnum} from './enum';
+import {TimerStatusEnum, TimerTypeEnum, StackTypeEnum} from './enum';
 
 export type TimerCountType = {
     workTime: number;
@@ -18,4 +18,10 @@ export type InitialTimeStateType = {
     timerStatus: TimerStatusEnum,
     timerType: TimerTypeEnum,
     intervalId: any
+}
+
+export type StackItemType = {
+    id: number,
+    name: string,
+    type: StackTypeEnum
 }
