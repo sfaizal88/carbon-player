@@ -16,6 +16,7 @@ import {StackTypeEnum} from '../../../utils/enum';
 // STYLE IMPORT
 import './styles.css';
 
+// COMPONENT PROPS TYPE
 type StackBoxProps = {
   data: StackItemType[];
   noBottomBorder?: boolean;
@@ -26,6 +27,7 @@ const StackBox = ({
   noBottomBorder
 }: StackBoxProps) => {
 
+  // TRUNCATE EVENT
   const truncate = (val: string) => {
     return val.length > 7 ? `${val.slice(0, 5)}...` : val;
   }

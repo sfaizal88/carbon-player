@@ -10,8 +10,10 @@ import {useState, useEffect} from 'react';
 import { Text } from '@chakra-ui/react';
 
 const TodayTime = () => {
+  // LOCAL STATE
   const [time, setTime] = useState('');
 
+  // UPDATE TIME
   const updateTime = () => {
     const now = new Date();
     let hours = now.getHours();
@@ -22,6 +24,7 @@ const TodayTime = () => {
     setTime(`${hours.toString()}:${minutes} ${ampm}`);
   }
 
+  // CALL UPDATE TIME ON EVERY MINUTE
   useEffect(() => {
     updateTime();
     const timerId = setInterval(updateTime, 60000);

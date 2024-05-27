@@ -26,6 +26,7 @@ import ReportListData from '../data/report-list.json';
 // STYLE IMPORT
 import '../styles.css';
 
+// COMPONENT PROPS TYPE
 type ControlsProps  = {
     timerStatus: TimerStatusEnum;
     onStartTime: () => void;

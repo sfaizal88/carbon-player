@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# Pomodoro Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+Pomodoro Timer (Tomato Clock) build using React, TypeScript, and Chakra UI. The
+application allow a user to start a 25-minute work timer, which, upon completion,
+triggers a 5-minute break timer automatically. This cycle will be repeatable.
+Additionally, users will be able to reset the current timer at any stage.
+
+### Technology stack
+- ReactJS
+- Typescript
+- Chakra UI
+
+## Deployment process
+- Clone the above repo `git clone https://github.com/sfaizal88/carbon-player`
+- Install all the dependency `npm install`
+- Deploy the code in the github repo itself `npm deploy`
+- Once deployment completed, visit [https://github.com/sfaizal88/carbon-player/settings/pages](https://github.com/sfaizal88/carbon-player/settings/pages) to find the website link 
+- Website link to view the output [https://sfaizal88.github.io/carbon-player/](https://sfaizal88.github.io/carbon-player/)
 
 ## Available Scripts
 
@@ -19,6 +35,9 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm deploy`
+Deploy the app for production to the github deployment server and follow above steps.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -29,18 +48,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

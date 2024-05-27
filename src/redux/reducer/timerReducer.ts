@@ -13,6 +13,7 @@ import type {InitialTimeStateType} from '../../utils/types';
 import {DEFAULT_WORK_TIME, DEFAULT_BREAK_TIME} from '../../utils/constants';
 import {TimerStatusEnum, TimerTypeEnum} from '../../utils/enum';
 
+// INITIAL VALUE
 const initialState: InitialTimeStateType = {
     time: DEFAULT_WORK_TIME,
     timerCount: {workTime: 0, breakTime: 0},
@@ -21,6 +22,7 @@ const initialState: InitialTimeStateType = {
     intervalId: null
 }
 
+// REDUCER
 const timeReducer = createSlice({
     name: 'timer',
     initialState,
@@ -63,5 +65,6 @@ const timeReducer = createSlice({
     }
 });
 
+// EXPORT THE ACTIONS
 export const {startTime, pauseTime, stopTime, switchTimerType, updateTime} = timeReducer.actions;
 export default timeReducer.reducer;

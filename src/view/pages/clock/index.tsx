@@ -25,18 +25,26 @@ import type {InitialTimeStateType} from '../../../utils/types';
 import './styles.css';
 
 const ClockPage = () => {
+    // LOCAL VARIABLE
     const timeState:InitialTimeStateType = useSelector((state: any) => state.timer);
     const dispatch = useDispatch();
 
+    // ON USE TRIGGER START EVENT
     const onStartTime = () => {
+        // TRIGGERING THE SEC INTERVAL TO CHANGE THE TIME
         const timerId = setInterval(() => {
             dispatch(updateTime());
         }, 1000);
+        // TRIGGERING TO SAVE THE INTERVIAL ID
         dispatch(startTime({timerId}));
     }
 
+    // FUNCTION CALLED TO SWITCH BETWEEN BREAK AND WORK TIME 
+    // ONCE TIME DONE
     const onSwitchTimerType = () => {
+        // TRIGGER SWITCH TYPE
         dispatch(switchTimerType());
+        // START THE TIME
         onStartTime();
     }
 

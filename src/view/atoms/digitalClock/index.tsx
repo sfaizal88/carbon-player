@@ -14,6 +14,7 @@ import {convertSecIntoMinSec} from '../../../utils';
 // STYLE IMPORT
 import './styles.css';
 
+// COMPONENT PROPS TYPE
 type DigitalClockProps = {
   timeInSecond: number;
 }

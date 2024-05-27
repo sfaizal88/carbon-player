@@ -11,6 +11,7 @@ import { Box } from '@chakra-ui/react';
 // STYLE IMPORT
 import './styles.css';
 
+// COMPONENT PROPS TYPE
 type CounterProps = {
   label: string;
   count: number;
