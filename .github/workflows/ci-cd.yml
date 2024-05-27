@@ -49,9 +49,34 @@ jobs:
           name: build-artifacts
           path: ./build
 
+  test:
+      runs-on: ubuntu-latest
+      needs: build
+  
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+  
+        - name: Set up Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: 20
+  
+        - name: Install Node.js dependencies
+          run: npm install
+  
+        - name: Download build artifacts
+          uses: actions/download-artifact@v3
+          with:
+            name: build-artifacts
+            path: ./build
+  
+        - name: Run tests
+          run: npm test
+          
   deploy:
     runs-on: ubuntu-latest
-    needs: build
+    needs: test
 
     steps:
       - name: Checkout code
@@ -68,4 +93,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
-
